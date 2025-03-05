@@ -1,0 +1,80 @@
+Command Line Arguments:
+     dir = /workspace/cd0184/9664b117-d773-4799-b6a3-d4640ed70218/data/uploaded_images/ 
+    arch = vgg 
+ dogfile = /workspace/cd0184/9664b117-d773-4799-b6a3-d4640ed70218/data/dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     Dog_02.jpg  label:                        dog
+ 2 key:                 coffee_mug.jpg  label:                     coffee
+ 3 key:                    Frog_01.jpg  label:                       frog
+ 4 key:                     Dog_01.jpg  label:                        dog
+
+     MATCH:
+
+                   Frog_01.jpg: 
+Real:                       frog   Classifier:           tree frog, tree-frog
+
+ NOT A MATCH:
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:               golden retriever
+
+                coffee_mug.jpg: 
+Real:                     coffee   Classifier:                      soup bowl
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:               golden retriever
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+     MATCH:
+
+                   Frog_01.jpg: 
+Real:                       frog   Classifier:           tree frog, tree-frog  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                coffee_mug.jpg: 
+Real:                     coffee   Classifier:                      soup bowl  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+Using Model: VGG
+
+General Statistics:
+Number of Images: 4
+Number of Dog Images: 2
+Number of Not-a-Dog Images: 2
+
+Percentage Statistics:
+% Correctly Classified Dogs: 100.00%
+% Correctly Classified Breeds: 0.00%
+% Correctly Classified Not-a-Dog: 100.00%
+% Match: 25.00%
+
+Misclassified Dogs:
+
+Misclassified Breeds:
+Pet Image: dog, Classifier: golden retriever
+Pet Image: dog, Classifier: golden retriever
+
+** Total Elapsed Runtime: 0:0:5
